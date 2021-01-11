@@ -1,0 +1,82 @@
+#join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #EFEFEF;
+}
+
+#join form {
+    width: 444px;
+    height: 466px;
+    
+    background: #FFFFFF;
+    border: 0.5px solid #DADCE0;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+#join form h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#join form h1::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: -8px; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #74a7c8;
+}
+
+
+#join form input, button {
+    width: 100%;
+    height: 40px;
+
+    outline: none;
+    text-indent: 10px;
+
+    border: 1px solid #DADCE0;
+    border-radius: 4px;
+}
+
+#join form label {
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+#join form input {
+    margin-bottom: 20px;
+}
+
+#join form input:focus {
+    border-color: #74a7c8;
+}
+
+#join form button {
+    height: 44px;
+    background: #74a7c8;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#join form button:hover {
+    background: #6894b1;
+    color: white;
+}
