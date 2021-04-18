@@ -12,8 +12,38 @@ Here is why:
 * [React.JS](https://reactjs.org)
 * [OpenVidu](https://openvidu.io)
 
+## Getting Started
+
+### Prerequisites
+
+* [OpenVidu](https://docs.openvidu.io/en/2.17.0/deployment)
+* [npm](https://nodejs.org/uk)
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start OpenVidu
+   ```sh
+   docker run -p 4443:4443 --rm -e OPENVIDU_SECRET=MY_SECRET openvidu/openvidu-server-kms:2.17.0
+   ```
+4. Start videoconference application
+   ```sh
+   npm start
+   ```
+   
+If all is ok, you will see the form for joining the room. Complete this form with the necessary information and join. Open another browser tab to emulate other users and enter the room with the same code. If you will see 2 users, congratulations! You have done all in the right way. 
+
+If you get any issues, please contact me.
+
 ## Contributing
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork this project
 2. Create your Feature Branch
